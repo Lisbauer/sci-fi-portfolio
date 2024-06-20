@@ -1,0 +1,75 @@
+.about__container {
+    background-image: url('../../public/images/bg-aboutme.jpg');
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    padding: 20px; 
+}
+.text__about__container {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+}
+.about__container h1 {
+    font-family: "Audiowide";
+    color: #fffc00;
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.p__container {
+    width: 80%;
+    max-width: 800px; 
+    text-align: center;
+    border: solid 2px #fffc00;
+    color: white;
+    padding: 2em;
+    border-radius: 7%;
+}
+.p__transparency {
+    background: rgba(0, 0, 0, 0.511);
+    border-radius: 6%;
+    padding: 1em;
+}
+.p__container p {
+    font-size: 1.3em;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
+.p__container span {
+    color: #fffc00;
+}
+@media (max-width: 768px) {
+    .about__container h1 {
+        font-size: 2.6em;
+    }
+    .p__container {
+        width: 90%;
+        padding: 1.7em;
+        border-radius: 7%;
+    }
+    .p__container p {
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 480px) {
+    .about__container h1 {
+        font-size: 2em;
+    }
+    .p__container {
+        width: 95%;
+        padding: 1.2em;
+        border-radius: 7%;
+    }
+    .p__container p {
+        font-size: 1em;
+    }
+}

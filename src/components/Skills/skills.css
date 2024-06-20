@@ -1,0 +1,75 @@
+.skills__container{
+    background-image: url('../../public/images/bg-skills.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.skills__container h1 {
+    margin-top: 3em;
+    font-family: "Audiowide";
+    font-weight: 400;
+    font-style: normal;
+    color: transparent; 
+    -webkit-text-stroke-width: 3px; 
+    -webkit-text-stroke-color: #fffc00;
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.icons__container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;    
+    text-align: center;
+    background: linear-gradient(to left, #bb00ff4a, #7b00ff66);
+    border-radius: 3%;
+    padding: 1.6em;
+}
+.icon__container span{    
+    display: flex;
+    flex-direction: column;
+    font-family: 'Audiowide';
+    color: white;
+    font-size: 1.7em;
+}
+@media (max-width: 1024px) {
+    .icons__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;    
+        max-width: 80%;
+    }
+    .icon__container span{    
+        font-size: 1.4em;
+    }
+}
+@media (max-width: 768px) {
+    .skills__container h1 {
+        font-size: 2.6em;
+    }
+    .icon__container span{    
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 550px) {
+    .skills__container h1 {
+        font-size: 2.6em;
+    }
+    .icon__container span{    
+        font-size: 0.8em;
+    }
+    .skills__container{
+        background-position: right;
+    }
+    .icon__container img{    
+        width: 50px;
+    }
+}
+
+
+
