@@ -9,7 +9,7 @@
     padding: 20px;
 }
 .skills__container h1 {
-    margin-top: 3em;
+    margin-top: 2em;
     font-family: "Audiowide";
     font-weight: 400;
     font-style: normal;
@@ -19,7 +19,6 @@
     font-size: 4em;
     text-transform: uppercase;
     margin-bottom: 1em;
-    text-align: center;
 }
 .icons__container{
     display: grid;
@@ -28,14 +27,19 @@
     text-align: center;
     background: linear-gradient(to left, #bb00ff4a, #7b00ff66);
     border-radius: 3%;
-    padding: 1.6em;
+    padding: 1.6em; 
+    text-align: center; 
+}
+.icon__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .icon__container span{    
-    display: flex;
-    flex-direction: column;
     font-family: 'Audiowide';
     color: white;
-    font-size: 1.7em;
+    font-size: 1.7em;    
+    text-align: center;
 }
 @media (max-width: 1024px) {
     .icons__container{

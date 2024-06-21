@@ -1,6 +1,7 @@
 import React from 'react'
 import './certificates.css'
-
+import Contact from '../Contact/Contact'
+import Footer from '../Footer/Footer'
 
 const Certificates = () => {
   return (
@@ -18,8 +19,9 @@ const Certificates = () => {
                 </div>
             </div>
         </div>
-   
+        <Contact/>
         
+        <Footer/>
     </div>
   )
 }
