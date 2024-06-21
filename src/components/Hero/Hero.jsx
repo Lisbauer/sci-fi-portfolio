@@ -10,7 +10,6 @@ const Hero = () => {
       const handleResize = () => {
           setIsTabletView(window.innerWidth <= 1250);
       };
-
       window.addEventListener("resize", handleResize);
 
       handleResize();
