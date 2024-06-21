@@ -25,6 +25,10 @@ module.exports = withMT({
         'hover-border': '#ff0096',
         'border-white': '#fffff',
       },
+      screens: {
+        'tablet': '1275px',
+        'desktop': '1550px'
+      },
     },
   },
   plugins: [],
