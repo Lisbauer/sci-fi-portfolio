@@ -1,6 +1,8 @@
 import React from 'react';
 import './projects.css';
 import UIprojects from './UIprojects.jsx'
+import Skills from '../Skills/Skills.jsx'
+
 
 const projects = [
   {
@@ -57,6 +59,7 @@ const Projects = () => {
         ))}
       </div>
       <UIprojects/>
+      <Skills />
     </div>
   );
 };

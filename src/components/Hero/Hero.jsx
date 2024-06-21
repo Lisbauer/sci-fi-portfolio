@@ -28,9 +28,9 @@ const Hero = () => {
         <>
           <Navbar />
           <div className="text_container">
-            <h4>desarrolladora frontend</h4>
+            <h4>frontend developer</h4>
             <img src="./images/nametitle.png" alt="Lisa Bauer Neon" />
-            <h3>bienvenido a mi portafolio</h3>
+            <h3>welcome to my portfolio</h3>
           </div>
           <div className="bg_img_container">      
             <img
