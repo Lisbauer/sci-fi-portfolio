@@ -8,6 +8,7 @@
     align-items: center;
     overflow: hidden; 
     padding: 20px; 
+    flex-direction: column;
 }
 .text__about__container {
     display: flex;
@@ -45,6 +46,73 @@
     font-weight: 400;
 }
 .p__container span {
+    color: #fffc00;
+}
+
+.a-neon{
+    position: relative;
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.411);
+    margin: 40px;
+    transition: 1s;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: 'Audiowide';
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(128, 128, 128, 0.394));
+}
+.a-neon:hover{
+    background:  var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr),
+    0 0 60px var(--clr),
+    0 0 100px var(--clr);
+}
+.a-neon::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 400%;
+    background: var(--clr);
+    transition: 1s;
+    animation: animate 2s linear infinite;
+}
+.a-neon:hover::before{
+    width: 120%;
+}
+@keyframes animate{
+    0%{
+       transform: rotate(0deg);
+    } 
+    100% {
+            transform: rotate(360deg);
+        }
+}
+.a-neon::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background-color: rgb(229, 255, 0);
+    transition: 0.5s;
+}
+.a-neon:hover::after{
+    background:  var(--clr);
+}
+.a-neon span{
+    position: relative;
+    z-index: 1;
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.a-neon:hover span{
+    opacity: 1;
     color: #fffc00;
 }
 @media (max-width: 768px) {

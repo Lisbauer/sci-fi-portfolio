@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="bg_img_container">      
             <img
               className="purple_bg"
-              src="./images/bg-picture.png"
+              src="./images/jinx.png"
               alt="purple background"
             />
           </div>
