@@ -15,8 +15,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="container">
-        <div className="navigator">
+      <div className="absolute top-10 left-1 z-20 bg-transparent">
+        <div className="navigator flex flex-col gap-[15px] w-[21em] bg-transparent pt-[1rem]">
           <Link
             to="home"
             smooth={true}
@@ -24,6 +24,8 @@ const Navbar = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
           >
             {" "}
             Home
@@ -35,6 +37,8 @@ const Navbar = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
           >
             {" "}
             About Me
@@ -46,6 +50,8 @@ const Navbar = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
           >
             {" "}
             Projects
@@ -57,6 +63,8 @@ const Navbar = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
           >
             {" "}
             Skills
@@ -68,6 +76,8 @@ const Navbar = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
           >
             {" "}
             Certificates
@@ -79,6 +89,8 @@ const Navbar = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
           >
             {" "}
             Contact

@@ -16,7 +16,7 @@ const NavbarTablet = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const tabletView = window.innerWidth <= 550;
+      const tabletView = window.innerWidth <= 750;
       setIsTabletView(tabletView);
 
       if (!tabletView) {
@@ -39,7 +39,7 @@ const NavbarTablet = () => {
   const handleCloseClick = () => {
     setMenuOpen(false);
   };
-  
+
   return (
     <div>
       {isTabletView && (
@@ -61,9 +61,11 @@ const NavbarTablet = () => {
         </div>
       )}
 
-      <div className={`container_2 ${isTabletView && isMenuOpen ? "open" : ""}`}>
+      <div
+        className={`container_2 ${isTabletView && isMenuOpen ? "open" : ""}`}
+      >
         <div className="navigator_2">
-        <Link
+          <Link
             to="home"
             smooth={true}
             duration={500}
@@ -133,14 +135,16 @@ const NavbarTablet = () => {
       </div>
 
       {!isTabletView && (
-        <div className="navigator_3">
-<Link
+        <div className="flex flex-col gap-4 w-[21em] bg-transparent pb-4">
+          <Link
             to="home"
             smooth={true}
             duration={500}
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
+            className="custom-menu-tablet"
           >
             {" "}
             Home
@@ -152,7 +156,8 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
-          >
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
+            className="custom-menu-tablet">
             {" "}
             About Me
           </Link>
@@ -163,6 +168,8 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
+            className="custom-menu-tablet"
           >
             {" "}
             Projects
@@ -174,6 +181,8 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
+            className="custom-menu-tablet"
           >
             {" "}
             Skills
@@ -185,6 +194,8 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
+            className="custom-menu-tablet"
           >
             {" "}
             Certificates
@@ -196,6 +207,8 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
+            className="custom-menu-tablet"
           >
             {" "}
             Contact
