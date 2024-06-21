@@ -9,9 +9,15 @@ function App() {
   return (
     <div>
       <Hero />
+      <div id="aboutme">
       <AboutMe />
+      </div>
+      <div id='projects'>
       <Projects />
+      </div>
+      <div id='certificates'>
       <Certificates />
+      </div>
     </div>
   )
 }

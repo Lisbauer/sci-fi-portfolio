@@ -59,7 +59,9 @@ const Projects = () => {
         ))}
       </div>
       <UIprojects/>
+      <div id='skills'>
       <Skills />
+      </div>
     </div>
   );
 };

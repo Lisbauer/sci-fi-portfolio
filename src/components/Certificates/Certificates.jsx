@@ -19,6 +19,7 @@ const Certificates = () => {
                 </div>
             </div>
         </div>
+
         <Contact/>
 
         <Footer/>

@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./navbartablet.css";
+import { Link, animateScroll } from "react-scroll";
 
 const NavbarTablet = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isTabletView, setIsTabletView] = useState(false);
+
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,7 +39,7 @@ const NavbarTablet = () => {
   const handleCloseClick = () => {
     setMenuOpen(false);
   };
-
+  
   return (
     <div>
       {isTabletView && (
@@ -54,23 +63,143 @@ const NavbarTablet = () => {
 
       <div className={`container_2 ${isTabletView && isMenuOpen ? "open" : ""}`}>
         <div className="navigator_2">
-          <a href="#inicio">Inicio</a>
-          <a href="#sobre-mi">Sobre mi</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#conocimientos">Conocimientos</a>
-          <a href="#certificados">Certificados</a>
-          <a href="#contacto">Contacto</a>
+        <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Home
+          </Link>
+          <Link
+            to="aboutme"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            About Me
+          </Link>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Projects
+          </Link>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Skills
+          </Link>
+          <Link
+            to="certificates"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Certificates
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Contact
+          </Link>
         </div>
       </div>
 
       {!isTabletView && (
         <div className="navigator_3">
-          <a href="#inicio">Inicio</a>
-          <a href="#sobre-mi">Sobre mi</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#conocimientos">Conocimientos</a>
-          <a href="#certificados">Certificados</a>
-          <a href="#contacto">Contacto</a>
+<Link
+            to="home"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Home
+          </Link>
+          <Link
+            to="aboutme"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            About Me
+          </Link>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Projects
+          </Link>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Skills
+          </Link>
+          <Link
+            to="certificates"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Certificates
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            onClick={handleLinkClick}
+          >
+            {" "}
+            Contact
+          </Link>
         </div>
       )}
     </div>

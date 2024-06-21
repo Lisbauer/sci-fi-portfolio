@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-[auto] mt-32 border-2 border-solid border-yellow-400 rounded-lg px-[13em] py-[5em] bg-black-60 my-3 md:mt-16 2xl:mt-42 desktop:mt-36 lg:px-10 xl:px-20 sm:w-[40%] md:w-[50%] w-[70%] ">
+    <div id="contact" className="flex flex-col items-center justify-center h-[auto] mt-32 border-2 border-solid border-yellow-400 rounded-lg px-[13em] py-[5em] bg-black-60 my-3 md:mt-16 2xl:mt-42 desktop:mt-36 lg:px-10 xl:px-20 sm:w-[40%] md:w-[50%] w-[70%] ">
       <h1 className="font-audiowide text-[#fffc00] text-[2em] md:text-[2em] lg:text-[3em] w-[300px] lg:w-[400px] uppercase mb-7 text-center">
         contact me
       </h1>
