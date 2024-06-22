@@ -1,5 +1,5 @@
 .projects__container {
-    background-image: url('../../public/images/bg-projects-skills.jpg');
+    background-image: url(../../../public/images/bg-projects-skills.jpg);
     background-size: cover;
     background-position: center;
     min-height: 130vh;

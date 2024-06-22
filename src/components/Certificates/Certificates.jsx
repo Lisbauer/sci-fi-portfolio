@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer'
 
 const Certificates = () => {
   return (
-    <div className="bg-cover bg-center h-[320vh] md:h-[410vh] lg:h-[450vh] tablet:h-[310vh] flex flex-col items-center text-center pb-16 relative bg-[url('../../public/images/bg-certificates-contact.jpg')]" >
+    <div className="bg-cover bg-center h-[320vh] md:h-[410vh] lg:h-[450vh] tablet:h-[310vh] flex flex-col items-center text-center pb-16 relative bg-[url('../../../public/images/bg-certificates-contact.jpg')]" >
         <div className='flex flex-col text-center'>
             <h1 className='mt-[1em] md:mt-[2em] font-[Audiowide] text-[#fffc00] text-[2em] md:text-[3em] lg:text-[4em] uppercase mb-[1em]'>certifications</h1>
             <div className='flex gap-[60px] flex-wrap justify-center items-center'>
