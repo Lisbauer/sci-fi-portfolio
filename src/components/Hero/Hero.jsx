@@ -20,7 +20,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id="hero_id" className="bg-cover bg-center h-[120vh] 2xl:h-screen flex overflow-hidden  py-28 md:py-40 lg:py-0">
+    <div style={{
+      backgroundImage: `url(../../../public/images/bg.jpg)`,
+    }}
+     className="bg-center bg-cover h-[120vh] 2xl:h-screen flex overflow-hidden  py-28 md:py-40 lg:py-0">
       {isTabletView ? (
         <HeroTablet />
       ) : (
@@ -28,7 +31,7 @@ const Hero = () => {
           <Navbar />
           <div className="text_container flex flex-col absolute top-[30%] left-[40%] z-[3] justify-center items-center text-center mt-[12em]">
             <h4 className="font-bebas font-thin text-[#fffc00] text-[3em] tracking-tittle">frontend developer</h4>
-            <img src="./images/nametitle.png" alt="Lisa Bauer Neon" />
+            <a href="https://www.instagram.com/lis.script" target="blank"><img src="./images/nametitle.png" alt="Lisa Bauer Neon" /></a>
             <h3 className="font-bebas font-thin text-[#fffc00] text-[1.2em] tracking-subtittle">welcome to my portfolio</h3>
           </div>
           <div className="bg_img_container relative flex justify-end items-start h-full w-full">      

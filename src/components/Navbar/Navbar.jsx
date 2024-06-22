@@ -24,7 +24,7 @@ const Navbar = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
-            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom cursor-pointer"
           >
             {" "}
             Home
@@ -37,7 +37,7 @@ const Navbar = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
-            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom cursor-pointer"
           >
             {" "}
             About Me
@@ -50,7 +50,7 @@ const Navbar = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
-            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom cursor-pointer"
           >
             {" "}
             Projects
@@ -63,7 +63,7 @@ const Navbar = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
-            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom cursor-pointer"
           >
             {" "}
             Skills
@@ -76,7 +76,7 @@ const Navbar = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
-            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom cursor-pointer"
           >
             {" "}
             Certificates
@@ -89,7 +89,7 @@ const Navbar = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd',}}
-            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom"
+            className="relative block w-full bg-transparent tracking-[1.7px] border-b-2 border-solid border-menu box-shadow-custom cursor-pointer"
           >
             {" "}
             Contact

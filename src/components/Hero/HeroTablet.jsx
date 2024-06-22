@@ -13,11 +13,10 @@ const Hero = () => {
           alt="personal image"
         />
         <h4 className="font-bebas font-thin text-[#fffc00] text-[2.2em] tracking-tittle">frontend developer</h4>
-        <img
-          className="Neon_name w-[80%]"
+        <a className=" w-[80%]" href="https://www.instagram.com/lis.script" target="blank"><img
           src="./images/nametitle.png"
           alt="Lisa Bauer Neon"
-        />
+        /></a>
         <h3 className="font-bebas font-thin text-[#fffc00] text-[1.7em] tracking-subtittle">welcome to my portfolio</h3>
       </div>
     </div>

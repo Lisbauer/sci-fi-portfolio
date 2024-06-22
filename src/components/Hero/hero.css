@@ -1,6 +1,3 @@
-#hero_id{
-    background-image: url(../../../public/images/bg.jpg);
-}
 @media (max-width: 768px) {
     .container {
         left: 50%;

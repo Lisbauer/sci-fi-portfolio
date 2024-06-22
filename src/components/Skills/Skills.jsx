@@ -21,8 +21,8 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className='skills__container'>
-        <h1>SKILLS</h1>
+    <div className='bg-cover bg-center min-h-screen flex flex-col items-center p-5'>
+        <h1 className='custom-h1'>SKILLS</h1>
         <div className='icons__container'>
       {skills.map(skill => (
         <div key={skill.name} className='icon__container'>
