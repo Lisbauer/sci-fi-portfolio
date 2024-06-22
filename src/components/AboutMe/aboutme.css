@@ -1,7 +1,7 @@
 .about__container {
     background-image: url(../../../public/images/testingbg.jpg);
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .about__container h1 {
         font-size: 2.6em;
     }
@@ -26,4 +26,4 @@
     .p__container p {
         font-size: 1em;
     }
-}
+} */

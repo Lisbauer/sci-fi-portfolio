@@ -24,7 +24,8 @@ module.exports = withMT({
         'menu-shadow': 'rgba(0, 0, 0, 0.234)',
       },
       backgroundImage: {
-        'gradient-purple-pink': 'linear-gradient(to left, #8c0066, #ff0096)',
+        'gradient-purple-pink': 'linear-gradient(to left, #8c0066, #ff0096)',        
+        'gradient-glow': 'linear-gradient(to left, #bb00ff4a, #7b00ff66)'
       },
       colors: {
         'main-buttons': 'gradient-purple-pink',
@@ -82,15 +83,15 @@ module.exports = withMT({
           boxShadow: '4px 1px 1px rgba(0, 229, 255, 0.7), 3px 1px 1px rgba(0, 115, 255, 0.7)',
         },
          '.custom-button': {
-          width: '16rem', // Ancho del botón
-          fontFamily: 'Audiowide', // Fuente del texto
-          color: '#fffc00', // Color del texto
-          fontSize: '0.9rem', // Tamaño del texto
+          width: '16rem',
+          fontFamily: 'Audiowide',
+          color: '#fffc00',
+          fontSize: '0.9rem',
           '@screen sm': {
-          fontSize: '1.2rem', // Tamaño del texto en pantallas pequeñas y superiores
+          fontSize: '1.2rem',
           },
-          position: 'relative', // Posición relativa para elementos internos absolutos
-          overflow: 'hidden', // Ocultar cualquier contenido que sobresalga
+          position: 'relative',
+          overflow: 'hidden',
           backgroundImage: 'linear-gradient(to left, #9D50BB, #6E48AA)',
           backgroundSize: '100% 100%',
           color: 'transparent',
@@ -112,11 +113,13 @@ module.exports = withMT({
         '.a-neon': {
           position: 'relative',
           borderRadius: '20px',
-          width: '400px',
-          padding: '20px 60px',
+          width: '270px',
+          padding: '16px 50px',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          fontSize: '0.8em',
+          textAlign: 'center',
           backgroundColor: 'rgba(0, 0, 0, 0.411)',
           margin: '40px',
           transition: '1s',
@@ -124,6 +127,11 @@ module.exports = withMT({
           overflow: 'hidden',
           fontFamily: '"Audiowide"',
           '-webkit-box-reflect': 'below 1px linear-gradient(transparent, transparent, rgba(128, 128, 128, 0.394))',
+          '@screen md': {
+            width: '400px',
+            padding: '20px 30px',
+            margin: '40px auto',
+          },
         },
         '.a-neon:hover': {
           background: 'var(--clr)',
@@ -172,7 +180,7 @@ module.exports = withMT({
           color: '#fffc00',
         },
       };
-      addUtilities(newUtilities, ['responsive', 'hover']);
+      addUtilities(newUtilities, ['responsive', 'hover', 'before', 'after']);
     },
   ],
 });

@@ -23,7 +23,7 @@ const Skills = () => {
   return (
     <div className='bg-cover bg-center min-h-screen flex flex-col items-center p-5'>
         <h1 className='custom-h1'>SKILLS</h1>
-        <div className='icons__container'>
+        <div className='grid grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 text-center bg-gradient-glow rounded-lg p-6'>
       {skills.map(skill => (
         <div key={skill.name} className='icon__container'>
           <span>{skill.name}</span>
