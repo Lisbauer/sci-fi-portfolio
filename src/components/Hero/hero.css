@@ -1,4 +1,4 @@
-.hero_container , bg-cover{
+.bg-cover , bg-center{
     background-image:url(../../../public/images/bg.jpg);
 }
 @media (max-width: 768px) {
