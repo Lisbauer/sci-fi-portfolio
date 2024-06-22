@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./navbar.css";
 import { Link, animateScroll } from "react-scroll";
 
 const Navbar = () => {
