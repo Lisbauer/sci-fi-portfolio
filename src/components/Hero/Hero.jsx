@@ -20,7 +20,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="bg-cover bg-center h-[120vh] 2xl:h-screen flex overflow-hidden  py-28 md:py-40 lg:py-0">
+    <div id="hero_id" className="bg-cover bg-center h-[120vh] 2xl:h-screen flex overflow-hidden  py-28 md:py-40 lg:py-0">
       {isTabletView ? (
         <HeroTablet />
       ) : (

@@ -1,5 +1,5 @@
-.bg-cover , bg-center{
-    background-image:url(../../../public/images/bg.jpg);
+#hero_id{
+    background-image: url(../../../public/images/bg.jpg);
 }
 @media (max-width: 768px) {
     .container {
