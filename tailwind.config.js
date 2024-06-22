@@ -10,6 +10,9 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-background-cert-contact': "url('/images/bg-certificates-contact.jpg')",
+      },
       fontFamily: {
         audiowide: ['Audiowide', 'sans-serif'],
         bebas: ['Bebas Neue', 'sans-serif']
