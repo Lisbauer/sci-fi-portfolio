@@ -1,3 +1,4 @@
+const { height, width } = require("@fortawesome/free-brands-svg-icons/fa42Group");
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
@@ -234,13 +235,26 @@ module.exports = withMT({
           padding: "1em",
           display: "flex",
           flexDirection: "column",
+          justifyContent: "center",
           alignItems: "center",
           backdropfilter: "blur(2px)",
+          height: "100%",
+          width: "100%",
         },
         ".project-img":{
           borderRadius: "10%",
           width: "100%",
-          height: "auto",
+          height: "100%",
+        },
+        ".project-title":{
+          color: "white",
+          fontFamily: "Audiowide",
+          fontSize: "1.4em",
+          fontWeight: "200",
+        },
+        ".project-texts":{
+          color: "white",
+          fontFamily: "Kanit",
         },
         ".toTop": {
           position: "fixed",
