@@ -6,3 +6,11 @@
   margin: 0;
   padding: 0;
 }
+/* @layer components {
+  .container_2 {
+    @apply top-0 left-0 w-full h-0 shadow-[0_0.5rem_1rem_rgba(0,0,0,0.1)] overflow-hidden transition-[height] duration-300 ease z-[1000];
+  }
+  .container_2.open {
+    @apply h-96;
+  }
+} */

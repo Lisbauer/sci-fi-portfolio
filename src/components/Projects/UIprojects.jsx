@@ -1,34 +1,41 @@
 import React from 'react';
 import './uiprojects.css';
+import { Button } from "@material-tailwind/react";
 
 const projects = [
   {
     id: 1,
-    title: "Aiko Web",
+    title: "Tromsø web",
     imageUrl: "./images/ui-1.png",
-    link: "#"
+    link: "https://www.behance.net/gallery/200459269/Diseno-web-para-un-TP-de-la-facultad"
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "Tromsø web",
     imageUrl: "./images/ui-2.png",
-    link: "#"
+    link: "https://www.behance.net/gallery/201058453/Seccion-Actividades-en-Tromsoe-Noruega"
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "Razer Quartz Edition",
     imageUrl: "./images/ui-3.png",
-    link: "#"
+    link: "https://www.behance.net/gallery/200459707/Diseno-web-publicitario-para-linea-Razer-Quartz-Edition"
   },
   {
     id: 4,
-    title: "Project 4",
+    title: "Tromsø web MockUps",
     imageUrl: "./images/ui-4.png",
-    link: "#"
+    link: "https://www.behance.net/gallery/201056479/MockUp-Home-page-Tromsoe"
   },
 ];
 
-const Projects = () => {
+
+
+const UIprojects = () => {
+  const handleClick = (link) => {
+    window.open(link, "_blank"); // Abrir en una nueva pestaña
+  };
+
   return (
     <div className='ui__container'>
       <h2>UX/UI Design</h2>
@@ -37,7 +44,8 @@ const Projects = () => {
           <div key={project.id} className='uicard__projects'>
             <div className='uicard__bg'>
               <img src={project.imageUrl} alt={project.title} />
-              <a href={project.link}>Explore</a>
+              <Button onClick={() => handleClick(project.link)} className="w-52 md:w-36 font-audiowide text-[#fffc00] text-[0.7em] sm:text-[0.7em] lg:text-[1em] relative overflow-hidden bg-gradient-to-l from-purple-600 to-pink-600 mt-3" >   <span className="relative z-10">Explore</span>
+              <span className="absolute inset-0 bg-gradient-to-l from-pink-600 to-purple-600 opacity-0 hover:opacity-100 transition-opacity duration-1000"></span></Button>
             </div>
           </div>
         ))}
@@ -46,4 +54,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default UIprojects;

@@ -1,19 +1,5 @@
 .projects__container {
     background-image: url(../../../public/images/bg-projects-skills.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 130vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-.projects__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
 }
 .card__projects {
     border-radius: 10%;
@@ -52,7 +38,7 @@
     background: #00000000;
     border: solid 1px #ff0096 ;
 } */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .projects__container h1 {
         font-size: 2.6em;
     }
@@ -75,4 +61,4 @@
         width: 100%;
         max-width: 1200px;
       }
-}
+} */

@@ -39,24 +39,28 @@ const projects = [
     id: 6,
     title: "Project 6",
     imageUrl: "./images/project-6.png",
-    link: "#",
+    link: "https://payment-gateway-for-hola-vet.vercel.app/",
   },
 ];
 
 const Projects = () => {
+  const handleClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
-    <div className="projects__container">
+    <div className="projects__container min-h-[130vh] bg-cover bg-center flex flex-col items-center py-[20px]">
       <h1 className="custom-h1">My Projects</h1>
-      <div className="projects__grid">
+      <div className="grid grid-cols-3 gap-[20px] w-full max-w-[1200px]">
         {projects.map((project) => (
           <div key={project.id} className="card__projects">
             <div className="card__bg">
               <img src={project.imageUrl} alt={project.title} />
-              <div className="mt-14 lg:mt-4">
+              <div className="mt-4 lg:mt-4">
                 <Button
-                  href={project.link}
+                  onClick={() => handleClick(project.link)}
                   target="_blank"
-                  className="w-64 font-audiowide text-[#fffc00] text-[0.9em] sm:text-[1.2em] relative overflow-hidden bg-gradient-to-l from-purple-600 to-pink-600"
+                  className="md:w-48 font-audiowide text-[#fffc00] text-[0.8em] relative overflow-hidden bg-gradient-to-l from-purple-600 to-pink-600"
                 >
                   <span className="relative z-10">Explore</span>
                   <span className="absolute inset-0 bg-gradient-to-l from-pink-600 to-purple-600 opacity-0 hover:opacity-100 transition-opacity duration-1000"></span>

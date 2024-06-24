@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./navbartablet.css";
 import { Link, animateScroll } from "react-scroll";
 
 const NavbarTablet = () => {
@@ -16,7 +15,7 @@ const NavbarTablet = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const tabletView = window.innerWidth <= 750;
+      const tabletView = window.innerWidth <= 720;
       setIsTabletView(tabletView);
 
       if (!tabletView) {
@@ -43,12 +42,13 @@ const NavbarTablet = () => {
   return (
     <div>
       {isTabletView && (
-        <div className="navbar_icons">
+        <div className="navbar_icons block absolute top-[0.5rem] right-[1rem] z-[1100] md:hidden">
           <img
             id="menu-icon"
             src="../images/burger.png"
             alt="menu"
             onClick={handleMenuClick}
+            className="w-[70px] h-[70px] md:hidden"
             style={{ display: isMenuOpen ? "none" : "block" }}
           />
           <img
@@ -56,15 +56,14 @@ const NavbarTablet = () => {
             src="../images/x.png"
             alt="close"
             onClick={handleCloseClick}
+            className="w-[70px] h-[70px] md:hidden"
             style={{ display: isMenuOpen ? "block" : "none" }}
           />
         </div>
       )}
 
-      <div
-        className={`container_2 ${isTabletView && isMenuOpen ? "open" : ""}`}
-      >
-        <div className="navigator_2">
+<div className={`top-0 left-0 w-full h-0 shadow-[0_0.5rem_1rem_rgba(0,0,0,0.1)] overflow-hidden transition-[height] duration-300 ease z-[1000] ${isTabletView && isMenuOpen ? "h-96" : ""} md:hidden`}>
+        <div className="flex flex-col gap-4 w-[17rem] md:w-[21rem] bg-transparent pt-4">
           <Link
             to="home"
             smooth={true}
@@ -72,6 +71,7 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            className="custom-menu-mobile"
           >
             {" "}
             Home
@@ -83,6 +83,7 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            className="custom-menu-mobile"
           >
             {" "}
             About Me
@@ -94,6 +95,7 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            className="custom-menu-mobile"
           >
             {" "}
             Projects
@@ -105,6 +107,7 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            className="custom-menu-mobile"
           >
             {" "}
             Skills
@@ -116,6 +119,7 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            className="custom-menu-mobile"
           >
             {" "}
             Certificates
@@ -127,6 +131,7 @@ const NavbarTablet = () => {
             spy={true}
             exact="true"
             onClick={handleLinkClick}
+            className="custom-menu-mobile"
           >
             {" "}
             Contact
@@ -144,7 +149,7 @@ const NavbarTablet = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
-            className="custom-menu-tablet"
+            className="custom-menu"
           >
             {" "}
             Home
@@ -157,7 +162,7 @@ const NavbarTablet = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
-            className="custom-menu-tablet">
+            className="custom-menu">
             {" "}
             About Me
           </Link>
@@ -169,7 +174,7 @@ const NavbarTablet = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
-            className="custom-menu-tablet"
+            className="custom-menu"
           >
             {" "}
             Projects
@@ -182,7 +187,7 @@ const NavbarTablet = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
-            className="custom-menu-tablet"
+            className="custom-menu"
           >
             {" "}
             Skills
@@ -195,7 +200,7 @@ const NavbarTablet = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
-            className="custom-menu-tablet"
+            className="custom-menu"
           >
             {" "}
             Certificates
@@ -208,7 +213,7 @@ const NavbarTablet = () => {
             exact="true"
             onClick={handleLinkClick}
             style={{borderBottomWidth: '2px', borderBottomColor: '#7dfffd'}}
-            className="custom-menu-tablet"
+            className="custom-menu"
           >
             {" "}
             Contact
