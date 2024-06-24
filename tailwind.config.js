@@ -43,6 +43,7 @@ module.exports = withMT({
       boxShadow: {
         menu: "4px 1px 1px rgba(125, 255, 253, 0.7), 3px 1px 1px rgba(0, 115, 255, 0.7)",
         "menu-boxshadow": "4px 1px 1px rgb(0, 229, 255)",
+        "project-boxshadow": "0 0 20px rgba(255, 0, 150, 0.8);"
       },
       textShadows: {
         "menu-text-shadow": "1px 1px 7px rgb(0, 229, 255)",
@@ -144,7 +145,7 @@ module.exports = withMT({
           fontWeight: "400",
           fontStyle: "normal",
           color: "#fffc00",
-          fontSize: "2.6em",
+          fontSize: "2em",
           textTransform: "uppercase",
           marginBottom: "1em",
           "@screen lg": {
@@ -221,6 +222,25 @@ module.exports = withMT({
           opacity: "1",
           color: "#fffc00",
         },
+        ".project-cards":{
+          borderRadius: "10%",
+          border: "solid 2px #ff0096",
+          overflow: "hidden",
+          boxShadow: "0 0 20px rgba(255, 0, 150, 0.8)",
+        },
+        ".project-cards-bg":{
+          background: "rgba(0, 0, 0, 0.429)",
+          padding: "1em",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          backdropfilter: "blur(2px)",
+        },
+        ".project-img":{
+          borderRadius: "10%",
+          width: "100%",
+          height: "auto",
+        }
       };
       addUtilities(newUtilities, ["responsive", "hover", "before", "after"]);
     },

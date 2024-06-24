@@ -49,13 +49,13 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects__container min-h-[130vh] bg-cover bg-center flex flex-col items-center py-[20px]">
+    <div className="projects__container min-h-[130vh] bg-cover bg-center flex flex-col items-center py-[20px] px-10">
       <h1 className="custom-h1">My Projects</h1>
-      <div className="grid grid-cols-3 gap-[20px] w-full max-w-[1200px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] w-full max-w-[1200px]">
         {projects.map((project) => (
-          <div key={project.id} className="card__projects">
-            <div className="card__bg">
-              <img src={project.imageUrl} alt={project.title} />
+          <div key={project.id} className="project-cards">
+            <div className="project-cards-bg">
+              <img className="project-img" src={project.imageUrl} alt={project.title} />
               <div className="mt-4 lg:mt-4">
                 <Button
                   onClick={() => handleClick(project.link)}

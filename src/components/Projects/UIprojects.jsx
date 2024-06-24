@@ -38,12 +38,12 @@ const UIprojects = () => {
 
   return (
     <div className='ui__container'>
-      <h2>UX/UI Design</h2>
-      <div className='ui__grid'>
+      <h2 className='text-[10px] text-center py-7 first-line:custom-h1 '>UX/UI Design</h2>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px] w-full max-w-[1200px] pb-16 px-12 xl:px-0'>
         {projects.map((project) => (
-          <div key={project.id} className='uicard__projects'>
-            <div className='uicard__bg'>
-              <img src={project.imageUrl} alt={project.title} />
+          <div key={project.id} className='project-cards'>
+            <div className='project-cards-bg'>
+              <img className='project-img' src={project.imageUrl} alt={project.title} />
               <Button onClick={() => handleClick(project.link)} className="w-52 md:w-36 font-audiowide text-[#fffc00] text-[0.7em] sm:text-[0.7em] lg:text-[1em] relative overflow-hidden bg-gradient-to-l from-purple-600 to-pink-600 mt-3" >   <span className="relative z-10">Explore</span>
               <span className="absolute inset-0 bg-gradient-to-l from-pink-600 to-purple-600 opacity-0 hover:opacity-100 transition-opacity duration-1000"></span></Button>
             </div>
