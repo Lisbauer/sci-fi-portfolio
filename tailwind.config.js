@@ -33,7 +33,7 @@ module.exports = withMT({
       colors: {
         "main-buttons": "gradient-purple-pink",
         "hover-border": "#ff0096",
-        "border-white": "#fffff",
+        "border-white": "#ffffff",
         "border-menu": "#7dfffd",
       },
       screens: {
@@ -61,6 +61,7 @@ module.exports = withMT({
       transitionTimingFunction: {
         ease: "ease",
       },
+      
     },
   },
   plugins: [
@@ -240,6 +241,112 @@ module.exports = withMT({
           borderRadius: "10%",
           width: "100%",
           height: "auto",
+        },
+        ".toTop": {
+          position: "fixed",
+          bottom: "10%",
+          right: "0%",
+          zIndex: "9999",
+        },
+        ".robot-container": {
+          position: "fixed",
+          bottom: "2%",
+          right: "2%",
+          transform: "translateX(-50%)",
+          cursor: "pointer",
+          transition: "all 1s",
+        },
+        ".robot img": {
+          zIndex: "10000",
+          width: "80px",
+        },
+        ".robot::before, .robot::after": {
+          content: '""',
+          position: "absolute",
+          top: "100%",
+          transform: "translateX(-50%)",
+          transition: "all 0.3s",
+        },
+        ".robot::before": {
+          left: "38%",
+          height: "0px",
+          width: "8px",
+          backgroundImage:
+            "linear-gradient(rgba(255, 0, 212, 0.687), rgba(251, 0, 255, 0.488), transparent)",
+          filter: "blur(2px)",
+        },
+        ".robot::after": {
+          left: "62%",
+          height: "0px",
+          width: "8px",
+          backgroundImage:
+            "linear-gradient(rgba(255, 0, 212, 0.687), rgba(251, 0, 255, 0.488), transparent)",
+          filter: "blur(2px)",
+        },
+        ".robot-container.active": {
+          bottom: "20%",
+        },
+        ".robot-container.active .robot": {
+          animation: "movement 0.5s ease infinite",
+        },
+        ".robot-container.active .robot::before": {
+          height: "100px",
+        },
+        ".robot-container.active .robot::after": {
+          height: "100px",
+        },
+        "@keyframes movement": {
+          "0%, 100%": {
+            transform: "translateY(4px)",
+          },
+          "50%": {
+            transform: "translateY(8px)",
+          },
+        },
+        ".robot-box.hide": {
+          display: "none",
+        },
+        ".robot-box": {
+          position: "fixed",
+          bottom: "2%",
+          right: "2%",
+          opacity: "0",
+          transition: "opacity 0.5s ease, transform 0.5s ease",
+          pointerEvents: "none",
+        },
+        ".robot-box.show": {
+          opacity: "1",
+          pointerEvents: "auto",
+        },
+        "@screen md": {
+          ".robot::before": {
+            left: "38%",
+            height: "0px",
+            width: "8px",
+            backgroundImage:
+              "linear-gradient(rgba(255, 0, 212, 0.687), rgba(251, 0, 255, 0.488), transparent)",
+            filter: "blur(2px)",
+          },
+          ".robot::after": {
+            left: "62%",
+            height: "0px",
+            width: "8px",
+            backgroundImage:
+              "linear-gradient(rgba(255, 0, 212, 0.687), rgba(251, 0, 255, 0.488), transparent)",
+            filter: "blur(2px)",
+          },
+        },
+        "@media (max-width: 720px)": {
+          ".robot-box img": {
+            width: "60px",
+          },
+          ".robot::before, .robot::after": {
+            width: "6px",
+            transform: "translateX(-50%)",
+          },
+          ".robot-container": {
+            right: "0%",
+          },
         }
       };
       addUtilities(newUtilities, ["responsive", "hover", "before", "after"]);
