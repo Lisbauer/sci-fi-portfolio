@@ -110,7 +110,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] w-full max-w-[1200px]">
           {projects.map((project) => (
             <div key={project.id} className="project-cards">
-              <Card className="project-cards-bg w-full max-w-[26rem] shadow-lg">
+              <Card className="project-cards-bg w-full max-w-[26rem] shadow-lg"  data-aos="fade-down">
                 <CardHeader floated={false} color="transparent">
                   <img className="project-img" src={project.imageUrl} alt="project image" />
                   <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />

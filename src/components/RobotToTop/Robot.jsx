@@ -44,14 +44,14 @@ const Robot = () => {
   }, []);
 
   return (
-    <div className={`robot-box ${isVisible ? "show" : "hide"} ${isAnimatingOut ? "animating-out" : ""}`}>
+    <div className={`robot-box ${isVisible ? "show" : "hide"} ${isAnimatingOut ? "animating-out" : ""}`} >
       <Link to="home" smooth={true} duration={1500} spy={true} exact="true">
         <div
           className={`robot-container ${robotActive ? "active" : ""}`}
           onClick={handleClick}
         >
-          <div className="robot">
-            <img src="./images/robot.png" alt="robot to top" />
+          <div className="robot" >
+            <img src="./images/robot.png" alt="robot to top"/>
           </div>
         </div>
       </Link>

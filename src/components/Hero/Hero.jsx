@@ -29,8 +29,8 @@ const Hero = () => {
       ) : (
         <>
           <Navbar />
-          <div className="text_container flex flex-col absolute top-[30%] left-[40%] z-[3] justify-center items-center text-center mt-[12em]">
-            <h4 className="font-bebas font-thin text-[#fffc00] text-[3em] tracking-tittle">frontend developer</h4>
+          <div className="text_container flex flex-col absolute top-[30%] left-[40%] z-[3] justify-center items-center text-center mt-[12em]">  
+            <h4 className="font-bebas font-thin text-[#fffc00] text-[3em] tracking-tittle">frontend developer</h4>    
             <a href="https://www.instagram.com/lis.script" target="blank"><img src="./images/nametitle.png" alt="Lisa Bauer Neon" /></a>
             <h3 className="font-bebas font-thin text-[#fffc00] text-[1.2em] tracking-subtittle">welcome to my portfolio</h3>
           </div>
