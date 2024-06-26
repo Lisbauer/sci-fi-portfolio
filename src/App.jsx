@@ -5,11 +5,13 @@ import Projects from "./components/Projects/Projects.jsx";
 import Certificates from "./components/Certificates/Certificates.jsx";
 import Robot from "./components/RobotToTop/Robot.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AOS from 'aos';
+import AOS from "aos";
+import Modal from "./components/Modal/Modal.jsx";
 
 function App() {
   return (
     <Router>
+
       <div>
         <div className="toTop">
           <Robot />

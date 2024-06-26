@@ -9,7 +9,7 @@ const AboutMe = () => {
     <div className="about__container bg-cover bg-center min-h-screen flex justify-center items-center overflow-hidden p-5 flex-col">
       <div className="flex flex-col justify-center items-center w-full max-w-[1200px]">
         <h1 className="custom-h1">About me</h1>
-        <FontAwesomeIcon id="insta" icon={faInstagram} className="instagram-icon" />
+      
         <div className="w-4/5 max-w-2xl text-center border-2 border-[#fffc00] text-white p-8 rounded-[7%]">
           <div className="bg-[rgba(0,0,0,0.511)] rounded-[6%] p-4">
             <p className="text-[0.9em] sm:text-[1.1em] md:text-[1.3em] font-[400] font-kanit">
