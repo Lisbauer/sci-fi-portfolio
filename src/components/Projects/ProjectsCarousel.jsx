@@ -19,7 +19,7 @@ const ProjectsCarousel = ({ projects }) => {
     <Carousel> 
       {projects.map((project) => (
        <div className="project-cards">
-        <Card key={project.id} className="bg-menu-shadow shadow-lg">
+        <Card key={project.id} className="bg-menu-shadow shadow-lg" data-aos="fade-down">
         <CardHeader floated={false} color="transparent" className="flex justify-center w-full mt-0 mx-0">
                   <img className="h-full" src={project.imageUrl} alt="project image" />
                   <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />

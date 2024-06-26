@@ -23,7 +23,7 @@ const Robot = () => {
     const heroHeight = heroElement ? heroElement.offsetHeight : 0;
     const scrollPosition = window.scrollY;
     
-    console.log(`Hero Height: ${heroHeight}, Scroll Position: ${scrollPosition}`); // Debugging line
+    console.log(`Hero Height: ${heroHeight}, Scroll Position: ${scrollPosition}`);
     
     if (scrollPosition > heroHeight && !robotActive) {
       setIsVisible(true);

@@ -5,28 +5,43 @@ import Projects from "./components/Projects/Projects.jsx";
 import Certificates from "./components/Certificates/Certificates.jsx";
 import Robot from "./components/RobotToTop/Robot.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AOS from "aos";
-import Modal from "./components/Modal/Modal.jsx";
+import MessageReceived from "./components/MessageReceived/MessageReceived.jsx";
 
 function App() {
   return (
     <Router>
+      <div className="App">
+        <div id="message">
+          <Routes>
+            <Route path="/messagesent" element={<MessageReceived />} />
+          </Routes>
+        </div>
+        <div>
+          <div className="toTop">
+            <Robot />
+          </div>
+          <div id="home">
+            <Routes>
+              <Route path="/" element={<Hero />} />
+            </Routes>
+          </div>
 
-      <div>
-        <div className="toTop">
-          <Robot />
-        </div>
-        <div id="home">
-          <Hero />
-        </div>
-        <div id="aboutme">
-          <AboutMe />
-        </div>
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="certificates">
-          <Certificates />
+          <div id="aboutme">
+            <Routes>
+              <Route path="/" element={<AboutMe />} />
+            </Routes>
+          </div>
+
+          <div id="projects">
+            <Routes>
+              <Route path="/" element={<Projects />} />
+            </Routes>
+          </div>
+          <div id="certificates">
+            <Routes>
+              <Route path="/" element={<Certificates />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </Router>

@@ -1,5 +1,4 @@
 import React from "react";
-import "./certificates.css";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 
@@ -19,24 +18,24 @@ const Certificates = () => {
             <img
               className="w-[22em] md:w-[38em] border-[7px] border-solid border-[#ec6bc0] rounded-[3px] shadow-[0_0_20px_rgb(255,0,136)]"
               src="./images/cert-1.png"
-              alt="Web development certification"
+              alt="Web development certification" data-aos="fade-down-right"
             />
             <img
               className="w-[22em] md:w-[38em] border-[7px] border-solid border-[#ec6bc0] rounded-[3px] shadow-[0_0_20px_rgb(255,0,136)]"
               src="./images/cert-2.png"
-              alt="Javascript certification"
+              alt="Javascript certification" data-aos="fade-up-right"
             />
           </div>
           <div className="flex flex-col gap-[60px] tablet:mt-[14em]">
             <img
               className="w-[22em] md:w-[38em] border-[7px] border-solid border-[#ec6bc0] rounded-[3px] shadow-[0_0_20px_rgb(255,0,136)]"
               src="./images/cert-3.png"
-              alt="React certification"
+              alt="React certification"  data-aos="fade-down-left"
             />
             <img
               className="w-[22em] md:w-[38em] border-[7px] border-solid border-[#ec6bc0] rounded-[3px] shadow-[0_0_20px_rgb(255,0,136)]"
               src="./images/cert-en-4.png"
-              alt="Frontend React Career certification"
+              alt="Frontend React Career certification"  data-aos="fade-up-left"
             />
           </div>
         </div>
