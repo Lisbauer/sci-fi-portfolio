@@ -5,7 +5,11 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .h-7{
 display: none;
+}
+.input-font-kanit {
+  font-family: 'Kanit', sans-serif;
 }
