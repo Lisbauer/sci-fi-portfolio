@@ -1,6 +1,7 @@
 import React from "react";
 
 const AboutMe = () => {
+
   return (
     <div className="bg-aboutme bg-cover bg-center min-h-screen flex justify-center items-center overflow-hidden flex-col">
       <div className="flex flex-col justify-center items-center w-full max-w-[1200px] mb-16">
@@ -30,7 +31,7 @@ const AboutMe = () => {
         href=""
         style={{ "--clr": "#ff22bb", "--i": 0 }}
       >
-        <a style={{ textDecoration: "none" }}>
+        <a style={{ textDecoration: "none" }} href="/cv-june-2024.pdf" download>
           <span>DOWNLOAD MY CV</span>
         </a>
       </a>
