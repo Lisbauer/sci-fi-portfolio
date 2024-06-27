@@ -26,7 +26,10 @@ module.exports = withMT({
       backgroundImage: {
         "gradient-purple-pink": "linear-gradient(to left, #8c0066, #ff0096)",
         "gradient-glow": "linear-gradient(to left, #bb00ff4a, #7b00ff66)",       
-        'cert-contact': "url('/dist/images/bg-certificates-contact.jpg')",
+        "cert-contact": "url('/dist/images/bg-certificates-contact.jpg')",
+        "hero-bg": "url('/dist/images/bg.jpg')",
+        "hero-bg": "url('/dist/images/bg.jpg')",
+        "aboutme": "url('/dist/images/testingbg.jpg')",
       },
       colors: {
         "main-buttons": "gradient-purple-pink",

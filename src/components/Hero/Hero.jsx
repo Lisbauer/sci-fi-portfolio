@@ -20,10 +20,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <div style={{
-      backgroundImage: `url(../../../public/images/bg.jpg)`,
-    }}
-     className="bg-center bg-cover h-[120vh] 2xl:h-screen flex overflow-hidden  py-28 md:py-40 lg:py-0">
+    <div
+     className="bg-hero-bg bg-center bg-cover h-[120vh] 2xl:h-screen flex overflow-hidden  py-28 md:py-40 lg:py-0">
       {isTabletView ? (
         <HeroTablet />
       ) : (
