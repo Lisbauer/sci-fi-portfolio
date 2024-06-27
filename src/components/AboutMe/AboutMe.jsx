@@ -31,7 +31,7 @@ const AboutMe = () => {
         href=""
         style={{ "--clr": "#ff22bb", "--i": 0 }}
       >
-        <a style={{ textDecoration: "none" }} href="/cv-june-2024.pdf" download>
+        <a style={{ textDecoration: "none" }} href="./cv-june-2024.pdf" download>
           <span>DOWNLOAD MY CV</span>
         </a>
       </a>
