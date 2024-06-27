@@ -4,10 +4,8 @@ import Footer from "../Footer/Footer";
 
 const Certificates = () => {
   return (
-    <div style={{
-      backgroundImage: `url(../../../public/images/bg-certificates-contact.jpg)`,
-    }}
-      className="bg-cover bg-center h-[320vh] md:h-[410vh] lg:h-[450vh] tablet:h-[310vh] flex flex-col items-center text-center pb-16 relative"
+    <div 
+      className="bg-cert-contact bg-cover bg-center h-[320vh] md:h-[410vh] lg:h-[450vh] tablet:h-[310vh] flex flex-col items-center text-center pb-16 relative"
     >
       <div className="flex flex-col text-center">
         <h1 className="custom-h1">
