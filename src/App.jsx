@@ -10,7 +10,7 @@ import MessageReceived from "./components/MessageReceived/MessageReceived.jsx";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App" translate="no">
         <div id="message">
           <Routes>
             <Route path="/messagesent" element={<MessageReceived />} />
