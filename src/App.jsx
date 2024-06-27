@@ -1,5 +1,5 @@
 import "./App.css";
-import './components/fonts.css'
+import './components/fonts.css';
 import Hero from "./components/Hero/Hero.jsx";
 import AboutMe from "./components/AboutMe/AboutMe.jsx";
 import Projects from "./components/Projects/Projects.jsx";

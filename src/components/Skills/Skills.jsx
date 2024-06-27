@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './skills.css';
+import './skills.css'; // Mantenemos este import para tus estilos personalizados
 
 const Skills = () => {
   useEffect(() => {
@@ -34,11 +34,11 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className='icon__container'
+            className='.icon__container'
             data-aos={skill.aosEffect}
           >
-            <span>{skill.name}</span>
-            <img src={skill.imageUrl} alt={`${skill.name} icon`} />
+            <span className="icon__span icon__span__tablet">{skill.name}</span>
+            <img src={skill.imageUrl} alt={`${skill.name} icon`} className="mt-2" />
           </div>
         ))}
       </div>

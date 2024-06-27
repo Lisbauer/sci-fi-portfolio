@@ -257,6 +257,17 @@ module.exports = withMT({
           color: "white",
           fontFamily: "Kanit",
         },
+        ".icon__container": {
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+        },
+        ".icon__span": {    
+          fontFamily: "Audiowide",
+          color: "white",
+          fontSize: "1.7em",   
+          textAlign: "center",
+      },
         ".toTop": {
           position: "fixed",
           bottom: "10%",
@@ -349,8 +360,17 @@ module.exports = withMT({
             backgroundImage:
               "linear-gradient(rgba(255, 0, 212, 0.687), rgba(251, 0, 255, 0.488), transparent)",
             filter: "blur(2px)",
-          },
+          },          
         },
+        "@media (max-width: 1024px)": {
+          '.icon__span__tablet': {
+            fontSize: '1.1em',
+          },
+
+        },
+          ".robot-box img": {
+            width: "60px",
+          },
         "@media (max-width: 720px)": {
           ".robot-box img": {
             width: "60px",
@@ -362,6 +382,16 @@ module.exports = withMT({
           ".robot-container": {
             right: "0%",
           },
+
+          "@media (max-width: 550px)": {
+            '.icon__span': {
+            fontSize: '0.6em',
+          },
+          '.icon__container img': {
+            width: '50px',
+          },
+          }
+      
         }
       };
       addUtilities(newUtilities, ["responsive", "hover", "before", "after"]);
