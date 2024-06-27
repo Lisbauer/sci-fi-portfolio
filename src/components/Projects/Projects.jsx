@@ -101,7 +101,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects__container min-h-[130vh] bg-cover bg-center flex flex-col items-center py-[20px] px-10">
+    <div className="md:bg-project-bg bg-project-tablet-bg min-h-[130vh] bg-cover bg-center flex flex-col items-center py-[20px] px-10">
       <h1 className="custom-h1">My Projects</h1>
 
       {isMobileView ? (
