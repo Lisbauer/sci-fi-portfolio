@@ -59,7 +59,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="flex flex-col items-center justify-center h-[auto] mt-32 border-2 border-solid border-yellow-400 rounded-lg px-[13em] py-[5em] bg-black-60 my-3 md:mt-16 2xl:mt-42 desktop:mt-36 lg:px-10 xl:px-20 sm:w-[40%] md:w-[50%] w-[70%]" data-aos="fade-down">
+    <div id="contact" className="flex flex-col items-center justify-center h-[auto] mt-44 md:mt-48 xl:mt-24 2xl:mt-32  md border-2 border-solid border-yellow-400 rounded-lg px-[4em] sm:px-[13em] py-[5em] lg:p-[10em] bg-black-60  desktop:mt-36 lg:px-10 xl:px-20 sm:w-[40%] md:w-[50%] w-[70%]" data-aos="fade-down">
       <h1 className="font-audiowide text-[#fffc00] text-[2em] md:text-[2em] lg:text-[3em] w-[300px] lg:w-[400px] uppercase mb-7 text-center">
         Contact me
       </h1>
