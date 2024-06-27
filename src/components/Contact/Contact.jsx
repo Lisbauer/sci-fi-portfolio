@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Input, Button } from "@material-tailwind/react";
+import { Input } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
@@ -42,29 +44,22 @@ const Contact = () => {
     }
     setErrors({});
     try {
-      const response = await fetch('https://tuservidorexpress.herokuapp.com/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await axios.post('http://localhost:3001/send', formData);
 
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
+      if (response.status === 200) {
+        setTimeout(() => {
+          navigate('/messagesent');
+        }, 50); 
+      } else {
+        setErrors({ submit: "Error sending email" });
       }
-
-      setTimeout(() => {
-        navigate('/messagesent');
-      }, 50);
     } catch (error) {
-      console.error('An error occurred while sending the email:', error);
-      setErrors({ submit: "Error sending email" });
+      setErrors({ submit: "An error occurred while sending the email: " + error.message });
     }
   };
 
   return (
-    <div id="contact" className="flex flex-col items-center justify-center h-[auto] mt-44 md:mt-48 xl:mt-24 2xl:mt-12 border-2 border-solid border-yellow-400 rounded-lg px-[4em] sm:px-[13em] py-[5em] lg:px-[18em] lg:p-[10em] bg-black-60  xl:px-20 sm:w-[40%] md:w-[50%] w-[70%]"  data-aos="fade-down">
+    <div id="contact" className="flex flex-col items-center justify-center h-[auto] mt-44 md:mt-48 xl:mt-24 2xl:mt-12     border-2 border-solid border-yellow-400 rounded-lg px-[4em] sm:px-[13em] py-[5em] lg:px-[18em] lg:p-[10em] bg-black-60  xl:px-20 sm:w-[40%] md:w-[50%] w-[70%]"  data-aos="fade-down">
       <h1 className="font-audiowide text-[#fffc00] text-[2em] md:text-[2em] lg:text-[3em] w-[300px] lg:w-[400px] uppercase mb-7 text-center">
         Contact me
       </h1>
@@ -76,6 +71,7 @@ const Contact = () => {
           className={`h-[3em] text-[1.1em] w-[300px] md:w-[400px] lg:w-[550px] input-font-kanit bg-black-60 focus:bg-black-60  ${errors.subject ? 'border-2 border-solid border-violet-500' : ''}`} 
           value={formData.subject} 
           onChange={handleChange} 
+          
         />
         
         <Input 
@@ -94,6 +90,7 @@ const Contact = () => {
           className={`h-[3em] text-[1.1em] w-[300px] md:w-[400px] lg:w-[550px] input-font-kanit ${errors.email ? 'border-2 border-solid border-violet-500' : ''}`} 
           value={formData.email} 
           onChange={handleChange} 
+          
         />
         
         <Input 
