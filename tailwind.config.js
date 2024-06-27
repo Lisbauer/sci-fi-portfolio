@@ -230,7 +230,6 @@ module.exports = withMT({
           borderRadius: "10%",
           border: "solid 2px #ff0096",
           overflow: "hidden",
-          boxShadow: "0 0 20px rgba(255, 0, 150, 0.8)",
         },
         ".project-cards-bg":{
           background: "rgba(0, 0, 0, 0.429)",

@@ -17,7 +17,7 @@ const Hero = () => {
           src="./images/nametitle.png"
           alt="Lisa Bauer Neon"
         /></a>
-        <h3 className="font-bebas font-thin text-[#fffc00] text-[1.7em] tracking-subtittle">welcome to my portfolio</h3>
+        <h3 className="font-bebas font-thin text-[#fffc00] text-[1.2em] md:text-[1.7em] tracking-subtittle">Yes, this is a portfolio</h3>
       </div>
     </div>
   );

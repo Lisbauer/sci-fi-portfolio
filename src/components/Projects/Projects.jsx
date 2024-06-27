@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./projects.css";
 import UIprojects from "./UIprojects.jsx";
 import Skills from "../Skills/Skills.jsx";
 import ProjectsCarousel from './ProjectsCarousel.jsx'
@@ -29,7 +28,7 @@ const projects = [
     id: 2,
     title: "Cosmos Portfolio",
     imageUrl: "./images/project-2.png",
-    description: "This was my first portfolio, with a galactic theme, but always wished for a Sci-fi one.",
+    description: "Latest portfolio, with a galactic theme, but always wished for a Sci-fi one.",
     developed: "Vite.JS, React.JS, Javascript, CSS",
     tools: "Photoshop, Paint Tool SAI, EmailJS, React-Scroll, FontAwesome, MaterialUI",
     github: "Confidential",
@@ -39,7 +38,7 @@ const projects = [
     id: 3,
     title: "AWG Platform",
     imageUrl: "./images/project-3.png",
-    description: "Landing page for certified specialists in leading eCommerce platforms.",
+    description: "Website for certified specialists in leading eCommerce platforms.",
     developed: "React.JS, Javascript, CSS",
     tools: "EmailJS, React-Scroll, FontAwesome, MaterialUI",
     github: "Check out",
@@ -50,7 +49,7 @@ const projects = [
     id: 4,
     title: "Magna Dimenseon",
     imageUrl: "./images/project-4.png",
-    description: "Project inspired by my previous portfolio: a landing page for a startup.",
+    description: "Inspired by my previous portfolio. A landing page for a startup.",
     developed: "Vite.JS, React.JS, Javascript, CSS",
     tools: "Paint Tool SAI, Photoshop, EmailJS, React-Scroll, FontAwesome",
     github: "Check out",
@@ -61,7 +60,7 @@ const projects = [
     id: 5,
     title: "Geek World",
     imageUrl: "./images/project-5.png",
-    description: "Created at the first academy I studied at. It's a simple and consisting eCommerce.",
+    description: "My first project. A simple and consisting eCommerce.",
     developed: "HTML, CSS, SASS, Javascript",
     tools: "Bootstrap, Photoshop",
     github: "Check out",
@@ -101,9 +100,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="md:bg-project-bg bg-project-tablet-bg min-h-[130vh] bg-cover bg-center flex flex-col items-center py-[20px] px-10">
+    <div className="md:bg-project-bg bg-project-tablet-bg bg-cover bg-center min-h-[130vh] flex flex-col items-center py-[20px] px-10 justify-center">
       <h1 className="custom-h1">My Projects</h1>
-
       {isMobileView ? (
         <ProjectsCarousel projects={projects} />
       ) : (
@@ -113,7 +111,7 @@ const Projects = () => {
               <Card className="project-cards-bg w-full max-w-[26rem] shadow-lg" data-aos="fade-down">
                 <CardHeader floated={false} color="transparent">
                   <img className="project-img" src={project.imageUrl} alt="project image" />
-                  <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
+                  <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60" />
                 </CardHeader>
                 <CardBody>
                   <div className="mb-1 flex">

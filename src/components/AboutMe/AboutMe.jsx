@@ -26,15 +26,15 @@ const AboutMe = () => {
       </div>
 
       <a
-        data-aos="flip-left"
-        className="a-neon"
-        href=""
-        style={{ "--clr": "#ff22bb", "--i": 0 }}
-      >
-        <a style={{ textDecoration: "none" }} href="./cv-june-2024.pdf" download>
-          <span>DOWNLOAD MY CV</span>
-        </a>
-      </a>
+  data-aos="flip-left"
+  className="a-neon"
+  href="./cv-june-2024.pdf"
+  download
+  style={{ "--clr": "#ff22bb", "--i": 0 }}
+>
+  <span style={{ textDecoration: "none" }}>DOWNLOAD MY CV</span>
+</a>
+
     </div>
   );
 };
