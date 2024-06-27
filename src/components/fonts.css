@@ -4,20 +4,21 @@
 
 @font-face {
     font-family: 'Audiowide';
-    src: url('../../assets/fonts/audiowide.ttf') format('truetype');
+    src: url('/fonts/audiowide.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../../assets/fonts/bebas-neue.ttf') format('truetype');
+    src: url('/fonts/bebas-neue.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Kanit';
     font-style: normal;
     font-weight: 400;
-    src: url('../../assets/fonts/kanit-regular.ttf') format('truetype');
+    src: url('/fonts/kanit-regular.ttf') format('truetype');
 }
