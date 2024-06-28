@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 
 const Certificates = () => {
 	return (
-		<div className="md:bg-certi-bg bg-certif-tablet-bg bg-cover bg-center  flex flex-col items-center text-center pb-16 relative">
+		<div className="md:bg-certi-bg bg-certif-tablet-bg bg-cover bg-center  flex flex-col items-none text-center pb-16 relative">
 			<div className="flex flex-col text-center">
 				<h1 className="custom-h1">certifications</h1>
 				<div className="flex gap-[60px] flex-wrap justify-center items-center">
