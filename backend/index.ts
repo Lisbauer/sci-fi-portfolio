@@ -33,16 +33,16 @@ app.post('/send', (req, res) => {
     from: email,
     to: process.env.EMAIL_USER!,
     subject: subject!,
-    text: `Nombre: ${name}\n\nEmail: ${email}\n\nMensaje: ${message}`,
+    text: `Nombre: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error('Error al enviar el correo:', error);
+      console.error('Error sending to:', error);
       return res.status(500).send(error.toString());
     }
-    console.log('Correo enviado:', info.response);
-    res.status(200).send('Correo enviado correctamente');
+    console.log('Email sent:', info.response);
+    res.status(200).send('Email sent correctly');
   });
 });
 
