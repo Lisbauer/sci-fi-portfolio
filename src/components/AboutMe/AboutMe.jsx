@@ -28,7 +28,7 @@ const AboutMe = () => {
       <a
   data-aos="flip-left"
   className="a-neon"
-  href="./cv-june-2024.pdf"
+  href="../dist/images/cv-june-2024.pdf"
   download
   style={{ "--clr": "#ff22bb", "--i": 0 }}
 >
