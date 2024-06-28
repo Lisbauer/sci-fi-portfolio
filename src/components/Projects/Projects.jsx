@@ -17,7 +17,7 @@ const projects = [
   {
     id: 1,
     title: "Aiko Website",
-    imageUrl: "../dist/images/project-1.png",
+    imageUrl: "./images/project-1.png",
     description: "Currently working on this website, based on an IT learning academy.",
     developed: "Next.JS, React.JS, Typescript, Redux, Firebase",
     tools: "TailwindCSS, Animated-scroll",
@@ -27,7 +27,7 @@ const projects = [
   {
     id: 2,
     title: "Cosmos Portfolio",
-    imageUrl: "../dist/images/project-2.png",
+    imageUrl: "./images/project-2.png",
     description: "Latest portfolio, with a galactic theme, but always wished for a Sci-fi one.",
     developed: "Vite.JS, React.JS, Javascript, CSS",
     tools: "Photoshop, Paint Tool SAI, EmailJS, React-Scroll, FontAwesome, MaterialUI",
@@ -37,7 +37,7 @@ const projects = [
   {
     id: 3,
     title: "AWG Platform",
-    imageUrl: "../dist/images/project-3.png",
+    imageUrl: "./images/project-3.png",
     description: "Website for certified specialists in leading eCommerce platforms.",
     developed: "React.JS, Javascript, CSS",
     tools: "EmailJS, React-Scroll, FontAwesome, MaterialUI",
@@ -48,7 +48,7 @@ const projects = [
   {
     id: 4,
     title: "Magna Dimenseon",
-    imageUrl: "../dist/images/project-4.png",
+    imageUrl: "./images/project-4.png",
     description: "Inspired by my previous portfolio. A landing page for a startup.",
     developed: "Vite.JS, React.JS, Javascript, CSS",
     tools: "Paint Tool SAI, Photoshop, EmailJS, React-Scroll, FontAwesome",
@@ -59,7 +59,7 @@ const projects = [
   {
     id: 5,
     title: "Geek World",
-    imageUrl: "../dist/images/project-5.png",
+    imageUrl: "./images/project-5.png",
     description: "My first project. A simple and consisting eCommerce.",
     developed: "HTML, CSS, SASS, Javascript",
     tools: "Bootstrap, Photoshop",
@@ -70,7 +70,7 @@ const projects = [
   {
     id: 6,
     title: "Hola Vet",
-    imageUrl: "../dist/images/project-6.png",
+    imageUrl: "./images/project-6.png",
     description: "I developed a payment gateway for animal health plans for a vet.",
     developed: "PHP, Vite.JS, React.JS, Javascript, CSS",
     tools: "FontAwesome, MaterialUI, PHP",

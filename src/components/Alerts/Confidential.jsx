@@ -21,7 +21,7 @@ const Glitch = () => {
   }, [navigate]);
 
   return (
-    <div className='glitchBody' style={{backgroundImage: `url('../dist/images/confidential.jpg')`}}>
+    <div className='glitchBody' style={{backgroundImage: `url('./images/confidential.jpg')`}}>
       <div className='glitchContainer'>
         <div className='glitch' data-text="I SAID IT'S CONFIDENTIAL">I SAID IT'S CONFIDENTIAL</div>
         <div className='glow'>I SAID IT'S CONFIDENTIAL</div>
