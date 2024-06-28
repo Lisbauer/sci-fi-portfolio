@@ -12,15 +12,16 @@ import {
 
 const ProjectsCarousel = ({ projects }) => {
   const handleClick = (link) => {
-    window.open(link, "_blank");
+    if (link) {
+      window.open(link, "_blank");
+    }
   };
 
   return (
     <Carousel>
       {projects.map((project) => (
-        <div className="project-cards">
+        <div  key={project.id} className="project-cards">
           <Card
-            key={project.id}
             className="bg-menu-shadow shadow-lg"
             data-aos="fade-down"
           >
@@ -77,7 +78,7 @@ const ProjectsCarousel = ({ projects }) => {
                   </Tooltip>
                   <Tooltip content={project.github}>
                     <span
-                      onClick={() => handleClick(project.githublink)}
+                      onClick={() => project.githublink && handleClick(project.githublink)} 
                       className="cursor-pointer rounded-full border border-pink-900/5 bg-pink-900/50 p-3 text-pink-400 transition-colors hover:border-pink-900/10 hover:bg-pink-900/10 hover:!opacity-100 group-hover:opacity-70"
                     >
                       <svg

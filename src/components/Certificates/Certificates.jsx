@@ -16,24 +16,24 @@ const Certificates = () => {
             <img
               className="w-[22em] md:w-[38em] border-[7px] border-solid border-[#ec6bc0] rounded-[3px] shadow-[0_0_20px_rgb(255,0,136)]"
               src="./images/cert-1.png"
-              alt="Web development certification" data-aos="fade-down-right"
+              alt="Web development certification"
             />
             <img
               className="w-[22em] md:w-[38em] border-[7px] border-solid border-[#ec6bc0] rounded-[3px] shadow-[0_0_20px_rgb(255,0,136)]"
               src="./images/cert-2.png"
-              alt="Javascript certification" data-aos="fade-up-right"
+              alt="Javascript certification"
             />
           </div>
           <div className="flex flex-col gap-[60px] tablet:mt-[14em]">
             <img
               className="w-[22em] md:w-[38em] border-[7px] border-solid border-[#ec6bc0] rounded-[3px] shadow-[0_0_20px_rgb(255,0,136)]"
               src="./images/cert-3.png"
-              alt="React certification"  data-aos="fade-down-left"
+              alt="React certification"
             />
             <img
               className="w-[22em] md:w-[38em] border-[7px] border-solid border-[#ec6bc0] rounded-[3px] shadow-[0_0_20px_rgb(255,0,136)]"
               src="./images/cert-en-4.png"
-              alt="Frontend React Career certification"  data-aos="fade-up-left"
+              alt="Frontend React Career certification"
             />
           </div>
         </div>

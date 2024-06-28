@@ -23,7 +23,11 @@ const Contact = () => {
   const validate = () => {
     const newErrors = {};
     if (!formData.subject) newErrors.subject = "Subject is missing";
-    if (!formData.name) newErrors.name = "Name is missing";
+    if (!formData.name) {
+      newErrors.name = "Name is missing";
+    } else if (formData.name.trim().split(' ').length < 2) {
+      newErrors.name = "Please enter both first and last name";
+    }
     if (!formData.email) {
       newErrors.email = "Please enter a valid Email";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
@@ -64,7 +68,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="flex flex-col items-center justify-center h-[auto] mt-44 md:mt-48 xl:mt-24 2xl:mt-12 border-2 border-solid border-yellow-400 rounded-lg px-[4em] sm:px-[13em] py-[5em] lg:px-[18em] lg:p-[10em] bg-black-60  xl:px-20 sm:w-[40%] md:w-[50%] w-[70%]"  data-aos="fade-down">
+    <div id="contact" className="flex flex-col items-center justify-center h-[auto] mt-44 md:mt-48 xl:mt-24 2xl:mt-12 border-2 border-solid border-yellow-400 rounded-lg px-[4em] sm:px-[13em] md:px-[18em] py-[7em] lg:px-[22em] lg:p-[10em] bg-black-60  xl:px-20 sm:w-[40%] md:w-[50%] w-[70%] relative"  data-aos="fade-down">
       <h1 className="font-audiowide text-[#fffc00] text-[2em] md:text-[2em] lg:text-[3em] w-[300px] lg:w-[400px] uppercase mb-7 text-center">
         Contact me
       </h1>
@@ -73,7 +77,7 @@ const Contact = () => {
           label="Subject" 
           name="subject" 
           color="white" 
-          className={`h-[3em] text-[1.1em] w-[300px] md:w-[400px] lg:w-[550px] input-font-kanit bg-black-60 focus:bg-black-60  ${errors.subject ? 'border-2 border-solid border-violet-500' : ''}`} 
+          className={`h-[3em] text-[1.1em] w-[300px] md:w-[400px] lg:w-[550px] input-font-kanit ${errors.subject ? 'border-2 border-solid border-violet-500' : ''}`} 
           value={formData.subject} 
           onChange={handleChange} 
         />
@@ -114,7 +118,7 @@ const Contact = () => {
         </Button>
         
         {Object.keys(errors).length > 0 && (
-          <div className="mt-2 text-sm text-white font-kanit">
+          <div className="mt-2 text-[11px] lg:text-[15px] text-white font-kanit absolute top-[82%] lg:top-[80%]">
             Please fix the following errors before submitting:
             <ul className="list-disc list-inside">
               {errors.subject && <li className="text-white">{errors.subject}</li>}

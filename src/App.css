@@ -22,7 +22,6 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-
   -webkit-text-fill-color: white;
   -webkit-box-shadow: 0 0 0px 0 #25334100 inset;
   box-shadow: 0 0 0px 0 #25334100 inset;

@@ -366,11 +366,11 @@ module.exports = withMT({
           '.icon__span__tablet': {
             fontSize: '1.1em',
           },
-
-        },
           ".robot-box img": {
             width: "60px",
           },
+        },
+
         "@media (max-width: 720px)": {
           ".robot-box img": {
             width: "60px",

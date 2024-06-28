@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './skills.css'; // Mantenemos este import para tus estilos personalizados
 
 const Skills = () => {
   useEffect(() => {
