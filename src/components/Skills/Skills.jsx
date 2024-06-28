@@ -34,7 +34,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className='.icon__container'
+            className='icon__container'
             data-aos={skill.aosEffect}
           >
             <span className="icon__span icon__span__tablet">{skill.name}</span>
