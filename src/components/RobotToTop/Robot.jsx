@@ -51,7 +51,7 @@ const Robot = () => {
           onClick={handleClick}
         >
           <div className="robot" >
-            <img src="./images/robot.png" alt="robot to top"/>
+            <img src="../dist/images/robot.png" alt="robot to top"/>
           </div>
         </div>
       </Link>

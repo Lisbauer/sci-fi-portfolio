@@ -66,9 +66,14 @@ const Contact = () => {
       setErrors({ submit: "Error sending email" });
     }
   };
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+    }
+  };
 
   return (
-    <div id="contact" className="flex flex-col items-center justify-center h-[auto] mt-44 md:mt-48 xl:mt-24 2xl:mt-12 border-2 border-solid border-yellow-400 rounded-lg px-[4em] sm:px-[13em] md:px-[18em] py-[7em] lg:px-[22em] lg:p-[10em] bg-black-60  xl:px-20 sm:w-[40%] md:w-[50%] w-[70%] relative"  data-aos="fade-down">
+    <div id="contact" className="flex flex-col items-center justify-center h-[auto] mt-44 md:mt-48 xl:mt-24 2xl:mt-64 desktop:mt-72 border-2 border-solid border-yellow-400 rounded-lg px-[4em] sm:px-[13em] md:px-[18em] py-[7em] lg:px-[22em] lg:p-[10em] bg-black-60 xl:px-20 sm:w-[40%] md:w-[50%] w-[70%] relative"  data-aos="fade-down">
       <h1 className="font-audiowide text-[#fffc00] text-[2em] md:text-[2em] lg:text-[3em] w-[300px] lg:w-[400px] uppercase mb-7 text-center">
         Contact me
       </h1>
@@ -80,6 +85,7 @@ const Contact = () => {
           className={`h-[3em] text-[1.1em] w-[300px] md:w-[400px] lg:w-[550px] input-font-kanit ${errors.subject ? 'border-2 border-solid border-violet-500' : ''}`} 
           value={formData.subject} 
           onChange={handleChange} 
+          onKeyDown={handleKeyDown} 
         />
         
         <Input 
@@ -89,6 +95,7 @@ const Contact = () => {
           className={`font-kanit h-[3em] text-[1.1em] w-[300px] md:w-[400px] lg:w-[550px] input-font-kanit ${errors.name ? 'border-2 border-solid border-violet-500' : ''}`} 
           value={formData.name} 
           onChange={handleChange} 
+          onKeyDown={handleKeyDown} 
         />
         
         <Input 
@@ -98,6 +105,7 @@ const Contact = () => {
           className={`h-[3em] text-[1.1em] w-[300px] md:w-[400px] lg:w-[550px] input-font-kanit ${errors.email ? 'border-2 border-solid border-violet-500' : ''}`} 
           value={formData.email} 
           onChange={handleChange} 
+          onKeyDown={handleKeyDown} 
         />
         
         <Input 
@@ -107,6 +115,7 @@ const Contact = () => {
           className={`h-[3em] text-[1.1em] w-[300px] md:w-[400px] lg:w-[550px] input-font-kanit ${errors.message ? 'border-2 border-solid border-violet-500' : ''}`} 
           value={formData.message} 
           onChange={handleChange} 
+          onKeyDown={handleKeyDown} 
         />
         
         <Button 

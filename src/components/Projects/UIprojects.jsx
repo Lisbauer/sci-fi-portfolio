@@ -5,25 +5,25 @@ const projects = [
   {
     id: 1,
     title: "Tromsø web",
-    imageUrl: "./images/ui-1.png",
+    imageUrl: "../dist/images/ui-1.png",
     link: "https://www.behance.net/gallery/200459269/Diseno-web-para-un-TP-de-la-facultad"
   },
   {
     id: 2,
     title: "Tromsø web",
-    imageUrl: "./images/ui-2.png",
+    imageUrl: "../dist/images/ui-2.png",
     link: "https://www.behance.net/gallery/201058453/Seccion-Actividades-en-Tromsoe-Noruega"
   },
   {
     id: 3,
     title: "Razer Quartz Edition",
-    imageUrl: "./images/ui-3.png",
+    imageUrl: "../dist/images/ui-3.png",
     link: "https://www.behance.net/gallery/200459707/Diseno-web-publicitario-para-linea-Razer-Quartz-Edition"
   },
   {
     id: 4,
     title: "Tromsø web MockUps",
-    imageUrl: "./images/ui-4.png",
+    imageUrl: "../dist/images/ui-4.png",
     link: "https://www.behance.net/gallery/201056479/MockUp-Home-page-Tromsoe"
   },
 ];

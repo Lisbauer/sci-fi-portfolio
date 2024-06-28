@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import {
   Carousel,
   Card,
@@ -11,11 +12,18 @@ import {
 } from "@material-tailwind/react";
 
 const ProjectsCarousel = ({ projects }) => {
-  const handleClick = (link) => {
-    if (link) {
+  const navigate = useNavigate();
+
+  const handleClick = (link, githublink) => {
+    if (link === "Confidential") {
+      navigate("/confidential");
+    } else if (githublink) {
+      window.open(githublink, "_blank");
+    } else {
       window.open(link, "_blank");
     }
   };
+  
 
   return (
     <Carousel>
@@ -78,7 +86,7 @@ const ProjectsCarousel = ({ projects }) => {
                   </Tooltip>
                   <Tooltip content={project.github}>
                     <span
-                      onClick={() => project.githublink && handleClick(project.githublink)} 
+                      onClick={() => handleClick(project.github, project.githublink)} 
                       className="cursor-pointer rounded-full border border-pink-900/5 bg-pink-900/50 p-3 text-pink-400 transition-colors hover:border-pink-900/10 hover:bg-pink-900/10 hover:!opacity-100 group-hover:opacity-70"
                     >
                       <svg

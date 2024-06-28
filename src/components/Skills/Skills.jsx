@@ -9,21 +9,21 @@ const Skills = () => {
   }, []);
 
   const skills = [
-    { name: 'HTML', imageUrl: './images/htmlicon.png', aosEffect: 'fade-up' },
-    { name: 'CSS', imageUrl: './images/cssicon.png', aosEffect: 'fade-down' },
-    { name: 'JavaScript', imageUrl: './images/jsicon.png', aosEffect: 'flip-left' },
-    { name: 'TypeScript', imageUrl: './images/tsicon.png', aosEffect: 'flip-right' },
-    { name: 'ViteJS', imageUrl: './images/viteicon.png', aosEffect: 'zoom-in' },
-    { name: 'Next.JS', imageUrl: './images/nexticon.png', aosEffect: 'zoom-out' },
-    { name: 'React.JS', imageUrl: './images/reacticon.png', aosEffect: 'fade-left' },
-    { name: 'SASS', imageUrl: './images/sassicon.png', aosEffect: 'fade-right' },
-    { name: 'Node.JS', imageUrl: './images/nodeicon.png', aosEffect: 'slide-up' },
-    { name: 'Photoshop', imageUrl: './images/psicon.png', aosEffect: 'slide-down' },
-    { name: 'GitHub', imageUrl: './images/githubicon.png', aosEffect: 'flip-up' },
-    { name: 'Git', imageUrl: './images/giticon.png', aosEffect: 'flip-down' },
-    { name: 'Bootstrap', imageUrl: './images/bootstrapicon.png', aosEffect: 'zoom-in-up' },
-    { name: 'TailwindCSS', imageUrl: './images/tailwindicon.png', aosEffect: 'zoom-in-down' },
-    { name: 'MaterialUI', imageUrl: './images/muiicon.png', aosEffect: 'zoom-out-up' }
+    { name: 'HTML', imageUrl: '../dist/images/htmlicon.png', aosEffect: 'fade-up' },
+    { name: 'CSS', imageUrl: '../dist/images/cssicon.png', aosEffect: 'fade-down' },
+    { name: 'JavaScript', imageUrl: '../dist/images/jsicon.png', aosEffect: 'flip-left' },
+    { name: 'TypeScript', imageUrl: '../dist/images/tsicon.png', aosEffect: 'flip-right' },
+    { name: 'ViteJS', imageUrl: '../dist/images/viteicon.png', aosEffect: 'zoom-in' },
+    { name: 'Next.JS', imageUrl: '../dist/images/nexticon.png', aosEffect: 'zoom-out' },
+    { name: 'React.JS', imageUrl: '../dist/images/reacticon.png', aosEffect: 'fade-left' },
+    { name: 'SASS', imageUrl: '../dist/images/sassicon.png', aosEffect: 'fade-right' },
+    { name: 'Node.JS', imageUrl: '../dist/images/nodeicon.png', aosEffect: 'slide-up' },
+    { name: 'Photoshop', imageUrl: '../dist/images/psicon.png', aosEffect: 'slide-down' },
+    { name: 'GitHub', imageUrl: '../dist/images/githubicon.png', aosEffect: 'flip-up' },
+    { name: 'Git', imageUrl: '../dist/images/giticon.png', aosEffect: 'flip-down' },
+    { name: 'Bootstrap', imageUrl: '../dist/images/bootstrapicon.png', aosEffect: 'zoom-in-up' },
+    { name: 'TailwindCSS', imageUrl: '../dist/images/tailwindicon.png', aosEffect: 'zoom-in-down' },
+    { name: 'MaterialUI', imageUrl: '../dist/images/muiicon.png', aosEffect: 'zoom-out-up' }
   ];
 
   return (

@@ -6,7 +6,8 @@ import Projects from "./components/Projects/Projects.jsx";
 import Certificates from "./components/Certificates/Certificates.jsx";
 import Robot from "./components/RobotToTop/Robot.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import MessageReceived from "./components/MessageReceived/MessageReceived.jsx";
+import MessageReceived from "./components/Alerts/MessageReceived.jsx";
+import Confidential from "./components/Alerts/Confidential.jsx";
 
 function App() {
   return (
@@ -15,6 +16,11 @@ function App() {
         <div id="message">
           <Routes>
             <Route path="/messagesent" element={<MessageReceived />} />
+          </Routes>
+        </div>
+        <div id="confidential">
+          <Routes>
+            <Route path="/confidential" element={<Confidential />} />
           </Routes>
         </div>
         <div>

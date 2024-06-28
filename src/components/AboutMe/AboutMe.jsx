@@ -12,7 +12,7 @@ const AboutMe = () => {
               I started my studies as a <span className="text-[#fffc00]">Frontend Developer</span> two
               years ago. I have a background in veterinary studies and worked in
               that field for six years. Currently, I am pursuing a career in{" "}
-              <span className="text-[#fffc00]">Web Design and Programming at Escuela Da Vinci</span>.
+              <span className="text-[#fffc00]">Web Design and Programming at <a href="https://davinci.edu.ar/" target="blank">Da Vinci School</a></span>.
             </p>
             <p className="text-[0.9em] sm:text-[1.1em] md:text-[1.3em] font-[400] font-kanit mt-2">
               I completed various programming courses in 2022 and also have an

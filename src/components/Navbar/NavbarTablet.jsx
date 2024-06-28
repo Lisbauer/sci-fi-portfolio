@@ -42,7 +42,7 @@ const NavbarTablet = () => {
   return (
     <div>
       {isTabletView && (
-        <div className="navbar_icons block absolute top-[0.5rem] right-[1rem] z-[1100] md:hidden">
+        <div className="block absolute top-[0.5rem] right-[1rem] z-[1100] md:hidden">
           <img
             id="menu-icon"
             src="../images/burger.png"

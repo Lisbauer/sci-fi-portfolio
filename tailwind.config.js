@@ -128,6 +128,12 @@ module.exports = withMT({
           boxShadow:
             "4px 1px 1px rgba(0, 229, 255, 0.7), 3px 1px 1px rgba(0, 115, 255, 0.7)",
         },
+        '.conic-gradient-pink': {
+          background: 'repeating-conic-gradient(from var(--a), theme("colors.pink-900") 0%, theme("colors.pink-900") 5%, transparent 5%, transparent 35%, theme("colors.pink-900") 50%)',
+        },
+        '.conic-gradient-blue': {
+          background: 'repeating-conic-gradient(from var(--a), theme("colors.blue-900") 0%, theme("colors.blue-900") 15%, transparent 5%, transparent 35%, theme("colors.blue-900") 50%)',
+        },
         ".custom-button": {
           width: "16rem",
           fontFamily: "Audiowide",
@@ -391,8 +397,9 @@ module.exports = withMT({
             width: '50px',
           },
           }
-      
+          
         }
+        
       };
       addUtilities(newUtilities, ["responsive", "hover", "before", "after"]);
     },
