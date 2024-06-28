@@ -42,7 +42,7 @@ const Contact = () => {
     }
     setErrors({});
     try {
-      const response = await fetch('https://sci-fi-portfolio-u5cn-git-main-lisabauerdevgmailcoms-projects.vercel.app/send', {
+      const response = await fetch('https://apimailer-one.vercel.app/api/v1/sendemail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

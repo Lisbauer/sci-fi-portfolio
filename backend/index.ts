@@ -1,14 +1,16 @@
-require('dotenv').config();
-const express = require('express');
-const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+import express from 'express';
+import nodemailer from 'nodemailer';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 
 app.use(bodyParser.json());
 
-const corsOptions = {
+const corsOptions: cors.CorsOptions = {
   origin: '*',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
@@ -22,15 +24,15 @@ app.post('/send', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      user: process.env.EMAIL_USER!,
+      pass: process.env.EMAIL_PASS!,
     },
   });
 
-  const mailOptions = {
+  const mailOptions: nodemailer.SendMailOptions = {
     from: email,
-    to: process.env.EMAIL_USER,
-    subject: subject,
+    to: process.env.EMAIL_USER!,
+    subject: subject!,
     text: `Nombre: ${name}\n\nEmail: ${email}\n\nMensaje: ${message}`,
   };
 
@@ -44,7 +46,7 @@ app.post('/send', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
