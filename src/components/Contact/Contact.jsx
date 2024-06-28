@@ -78,7 +78,7 @@ const Contact = () => {
 	return (
 		<div
 			id="contact"
-			className="flex flex-col items-center justify-center h-[auto] mt-44 md:mt-48 xl:mt-24 2xl:mt-64 desktop:mt-72 border-2 border-solid border-yellow-400 rounded-lg px-[4em] sm:px-[13em] md:px-[18em] py-[7em] lg:px-[22em] lg:p-[10em] bg-black-60 xl:px-20 sm:w-[40%] md:w-[50%] w-[70%] relative"
+			className="flex flex-col items-center justify-center h-[auto] mt-44 md:mt-48 xl:mt-24 2xl:mt-64 desktop:mt-72 border-2 border-solid border-yellow-400 rounded-lg px-[4em] sm:px-[13em] md:px-[18em] py-[7em] lg:px-[22em] lg:p-[10em] bg-black-60 xl:px-20 sm:w-[40%] md:w-[50%] w-[90%] relative"
 			data-aos="fade-down">
 			<h1 className="font-audiowide text-[#fffc00] text-[2em] md:text-[2em] lg:text-[3em] w-[300px] lg:w-[400px] uppercase mb-7 text-center">
 				Contact me
